@@ -1,0 +1,26 @@
+name: rvde
+channels:
+  - conda-forge
+  - pytorch
+#  - nodefaults
+dependencies:
+  # requirements for source code compilation
+  - python=3.9
+  - numpy
+  - cmake
+  - make
+  - cxx-compiler
+  - c-compiler
+  - eigen>=3.4
+  - openmp
+  - zlib
+  - boost
+  # requirements for tests/experiments
+  - matplotlib
+  - scikit-learn
+  - pytorch::pytorch
+  - pytorch::torchvision
+  - pytorch::torchaudio
+  - cudatoolkit=10.2
+  - scikit-image
+  - tqdm
